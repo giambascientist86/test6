@@ -36,7 +36,7 @@ def encrypt_user(user,df):
 def configure_kafka():
     """Creates and returns a Kafka producer instance."""
     
-    return KafkaProducer(bootstrap_servers= KAFKA_BOOTSTRAP_SERVERS)
+    return KafkaProducer(bootstrap_servers= KAFKA_BOOTSTRAP_SERVERS, api_version=(0,7,1))
 
 def publish_to_kafka(producer, topic, message_l):
     """Sends data to a Kafka topic."""
