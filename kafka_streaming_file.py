@@ -15,7 +15,7 @@ KAFKA_TOPIC = "movies_rec"
 PAUSE_INTERVAL = 10  
 STREAMING_DURATION = 120
 # indicate the volume where the file is present into the the Docker Container in docker-airflow/dags
-CSV_PATH = '/usr/local/airflow/data/movie_short.csv'
+CSV_PATH = "/usr/local/airflow/data/movie_short.csv"
 
 def retrieve_movie_data(path):
 
